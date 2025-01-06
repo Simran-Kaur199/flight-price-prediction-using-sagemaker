@@ -247,7 +247,7 @@ preprocessor = Pipeline(steps=[
 
 # read the train data
 
-path = r"data\train.csv"
+path = r"data/train.csv"
 
 train = pd.read_csv(path)
 
