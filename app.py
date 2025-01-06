@@ -41,6 +41,15 @@ from feature_engine.datetime import DatetimeFeatures
 
 from feature_engine.selection import SelectBySingleFeaturePerformance
 
+from sklearn.base import BaseEstimator
+
+class CustomEstimator(BaseEstimator):
+    def __sklearn_tags__(self):
+        tags = super().__sklearn_tags__()
+        # Modify tags as needed
+        return tags
+
+
 
 sklearn.set_config(transform_output="pandas")
 
